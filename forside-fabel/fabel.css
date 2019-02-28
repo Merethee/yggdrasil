@@ -1,0 +1,66 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 1.2rem;
+}
+
+main a {
+    text-decoration: none;
+}
+
+article {
+    width: 200px;
+    height: auto;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+article .image {
+    width: 200px;
+    height: 148px;
+}
+
+article .article-underline {
+    border-bottom: 1px solid #a9a9a9;
+    margin: 10px 0;
+}
+
+article p {
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    /* border: 1px solid red; */
+}
+
+article #litteraturen { background-color: #004956; }
+article #middelalderen { 
+    background-image: url(../img/verdensbildet.png);
+    background-size: cover;
+    background-position: -40px 10px;
+    background-repeat: no-repeat;
+    background-color: #7aa6b2;
+}
+article #renessanse { background-color: #007770; }
+
+article #barokk { background-color: #ffafa0; }
+article #klassisisme { background-color: #e2e2de; }
+article #romantikk { background-color: #004956; }
+
+article #realisme { background-color: #3f726f; }
+article #modernisme { background-color: #7aa6b2; }
+article #i-dag { background-color: #ffafa0; }

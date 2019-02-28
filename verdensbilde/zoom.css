@@ -1,0 +1,120 @@
+
+/* åsgard */
+
+.aasgard {
+    cursor: pointer; 
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 150px; 
+    right: 420px;
+}
+
+/* helheim */
+
+.hel {
+    cursor: pointer; 
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 230px; 
+    right: 300px;
+}
+
+/* karakter */
+
+.karakter {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 94px; 
+    right: 210px; 
+}
+
+.karakter img {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* popup rute */
+
+.popup, 
+.popup-to, 
+.popup-hel {
+    background-color: white;
+    border: 1px solid black;
+    width: 500px;
+    height: 350px;
+    border-radius: .4em;
+    margin: 100px auto;
+    position: relative;
+    left: 0; 
+    top: 0; 
+
+    padding: 20px; 
+    filter: drop-shadow(0 1px 2px #222);
+    display: none;
+}
+
+.popup  {
+    animation: pop 1s;
+}
+
+@keyframes pop {
+    
+    from { 
+        transform: scale(0.8); 
+    }
+    to {  
+        transform: scale(1) 
+    }
+}
+
+.popup p, 
+.popup-to p,
+.popup-hel p {
+    width: 400px; 
+    font-family: "open sans", Arial, Helvetica, sans-serif; 
+}
+
+.popup h3, 
+.popup-to h3,
+.popup-hel h3 {
+    font-size: 1.3rem; 
+    font-family: "della respira", "open sans", Arial, Helvetica, sans-serif; 
+}
+
+.exit-popup,
+.lukk {
+    float: right;
+    font-size: 1.3rem; 
+    font-weight: 700; 
+    cursor: pointer;
+}
+
+.btnNext {
+    text-decoration: underline; 
+    cursor: pointer;
+    font-weight: 700;
+    float: right;
+}
+
+/* exit */
+/* 
+.btnOut {
+    text-decoration: underline; 
+    display: none; 
+    color: #621100; 
+    font-weight: 800; 
+    font-size: .6rem; 
+}
+
+.btnOut{
+    position: relative;
+    top: 45px; 
+    left: 120px;
+} */
