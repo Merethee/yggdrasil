@@ -103,18 +103,21 @@
     float: right;
 }
 
-/* exit */
-/* 
-.btnOut {
+/* zoom inn og ut knapp på verdensbildet */
+
+.zoom-top {
+    position: absolute; 
+    top: 210px;
+    left:240px; 
     text-decoration: underline; 
-    display: none; 
-    color: #621100; 
-    font-weight: 800; 
-    font-size: .6rem; 
+    font-size: .8rem;
 }
 
-.btnOut{
-    position: relative;
-    top: 45px; 
-    left: 120px;
-} */
+.zoom-bottom {
+    position: absolute; 
+    bottom: 20px; 
+    right: 240px; 
+    text-decoration: underline; 
+    font-size: .8rem;
+}
+

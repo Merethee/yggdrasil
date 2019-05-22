@@ -1,9 +1,10 @@
 var verden = document.querySelector(".verden");
 var snakkeboble = document.querySelector(".snakkeboble");
 var header = document.querySelector(".header");
-// var btnout = document.querySelector(".btnOut"); 
-
+var tidslinjeBtn = document.querySelector(".til-tidslinje"); 
 var animate = document.querySelector(".animate"); 
+var zoomTop = document.querySelector(".zoom-top");
+var zoomBot = document.querySelector(".zoom-bottom");
 
 var zoomState = "map";
 var allowMapInput = true;
@@ -40,8 +41,10 @@ function zoomMap(position){
             verden.classList.add(position);
             zoomState = "";
 
+            zoomTop.innerHTML = "Tilbake"; 
+            zoomBot.innerHTML = "Tilbake"; 
             snakkeboble.style.display = "none"; 
-            // btnout.style.display = "block"; 
+            tidslinjeBtn.style.display = "none"; 
 
             header.classList.add("hide");
             header.classList.remove("show"); 
@@ -55,8 +58,9 @@ function zoomMap(position){
             zoomState = "map";
             allowMapInput = true; 
 
-            // btnout.style.display = "none"; 
-            
+            zoomTop.innerHTML = "Zoom inn"; 
+            zoomBot.innerHTML = "Zoom inn"; 
+            tidslinjeBtn.style.display = "block"; 
             header.style.display = "block";
             verden.style.transition = "1s ease-in-out";
 
