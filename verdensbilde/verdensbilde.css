@@ -43,6 +43,19 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.til-tidslinje {
+    text-decoration: underline; 
+   position: relative;
+   top: 20px;
+   left: 20px; 
+   z-index: 999;
+}
+
 /* animasjon show/hide meny når zoomet inn i verden */
 
 .header.hide {

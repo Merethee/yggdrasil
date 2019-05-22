@@ -11,6 +11,15 @@ body {
     line-height: 1.4em; 
 }
 
+
+/* tilbake til forsiden */
+.til-forsiden {
+    text-decoration: underline; 
+   position: relative;
+   top: 20px;
+   left: 20px; 
+}
+
 /* alle linker i dokumentet */
 a {
     text-decoration: none;
